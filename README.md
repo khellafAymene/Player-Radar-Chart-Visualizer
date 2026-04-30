@@ -1,6 +1,14 @@
 # 🕸️ Player Radar Chart Visualizer
 
 A customizable **polar/radar chart** tool for visualizing football (soccer) player statistics, built with Python and Matplotlib. Designed to produce clean, professional-looking player performance visuals.
+---
+##  📝 Note
+The provided code is best used in Power BI. You only need to remove the second and third lines, and it will run directly. Once the data file is supplied, the code will work without further adjustments.
+```python
+# قراءة البيانات
+dataset = pd.read_excel("DATA.xlsx",sheet_name="PLAYER")
+```
+
 
 ---
 
@@ -18,8 +26,9 @@ The chart displays each player's statistics as a polar bar chart, with:
 ## 📁 Project Structure
 
 ```
-├── Player.py            # Main script for generating the chart
-├── DATA.xlsx            # Excel file containing player statistics (sheet: PLAYER)
+├── Player Radar Chart Visualizer.py            # Main script for generating the chart
+├── DATA.xlsx                                   # Excel file containing player statistics (sheet: PLAYER)
+├── fonts                                       # This folder contains the fonts.
 └── README.md
 ```
 
@@ -36,7 +45,7 @@ The script reads from the `PLAYER` sheet with the following required columns:
 | `VALUE`    | Player's value for this metric           | 25              |
 | `MAX`      | Maximum possible value for this metric   | 40              |
 | `CATEGORY` | Group/category name for color coding     | Attacking       |
-| `COLOR`    | Hex color for this category              | #e63946         |
+| `COLOR`    | Hex color for this category              | #D70232        |
 
 > **Note:** Each row represents one metric. All rows for the same player share the same `PLAYER` value.
 
@@ -50,22 +59,12 @@ The script reads from the `PLAYER` sheet with the following required columns:
 pip install pandas matplotlib numpy openpyxl ANIS_HAJJAJI
 ```
 
-### Custom Module
-
-This project depends on `ANIS_HAJJAJI.py`, which must be in the same directory. It provides three helper functions:
-
-| Function              | Description                                      |
-|-----------------------|--------------------------------------------------|
-| `make_lighter(color, alpha)` | Lightens a hex color by the given factor  |
-| `percent_to_number(value)`   | Strips `%` sign and converts to float     |
-| `auto_split(text, max_len)`  | Splits long metric names across two lines |
-
 ### Font
 
-The script uses a custom Arabic-compatible font (**Almarai**). Download it from [Google Fonts](https://fonts.google.com/specimen/Almarai) and update the path in the script:
+The script uses a custom font . Download it from [Google Fonts] and update the path in the script:
 
 ```python
-Path = r"path\to\Almarai-Regular.ttf"
+Path = r"fonts\\Roboto-Bold.ttf"
 ```
 
 ---
@@ -78,13 +77,13 @@ Path = r"path\to\Almarai-Regular.ttf"
 4. Run the script:
 
 ```bash
-python Player.py
+python Player Radar Chart Visualizer.py 
 ```
 
 The chart will be displayed using `plt.show()`. To save it as an image instead, replace the last line with:
 
 ```python
-plt.savefig("player_chart.png", dpi=150, bbox_inches="tight")
+plt.savefig("Player Radar Chart Visualizer.png", dpi=150, bbox_inches="tight")
 ```
 
 ---
@@ -95,7 +94,7 @@ All visual settings are grouped at the top of the script for easy editing:
 
 ### 1. Title
 ```python
-First_tittel = "Anis"           # Player name shown as title
+First_tittel = "Player Radar Chart Visualizer"           # Player name shown as title
 First_tittel_color = "#570101"  # Title color
 First_tittel_size = 12          # Title font size
 First_tittel_bold = "bold"      # Title weight ("bold" or None)

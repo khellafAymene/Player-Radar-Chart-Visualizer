@@ -13,7 +13,7 @@ from ANIS_HAJJAJI import *
 
 
 # ضع المسار المحلي للخط بعد تنزيله
-Path = r"fonts\\Almarai-Regular.ttf"
+Path = r"fonts\\Roboto-Bold.ttf"
 font_italic = fm.FontProperties(fname=Path)
 
 #─────0. تحديد القيم────────────────────────────────────────────────────────────────────
@@ -27,18 +27,18 @@ First_tittel_bold = "bold"                              # سمك العنوان 
 fontstyle = font_italic
 
 # خاص بالاحصائيات 2
-Metric_size = 9                                         # حجم خط الاحصائيات
+Metric_size = 12                                         # حجم خط الاحصائيات
 Metric_color = "black"                                  # لون خط الاحصائيات
 Metric_bold = "bold"                                    # سمك خط الاحصائيات ولإزالة السمك غيرها إلى Metric_bold = None
 Metric_distance = 108                                   # بعد الاحصائيات عن الدائرة
 Metric_color_option = False                             # لكي تأخذ الإحصائيات لون الفئة الخاص بها غيرها إلى Metric_color_option = True
 
 # خاص بالقيم 3
-Metric_Value_size = 8                                   # حجم خط القيم
+Metric_Value_size =11                                   # حجم خط القيم
 Metric_Value_color_text = "#000000"                   # لون خط القيم
 Metric_Value_bold = "bold"                              # سمك خط القيم ولإزالة السمك غيرها إلى Metric_Value_bold = None
 Metric_Value_color_background_light = 0.25              # شفافية خلفية مربع القيم
-Metric_Value_box_pad = 0.2                              # حجم مربع القيم
+Metric_Value_box_pad = 0.3                              # حجم مربع القيم
 Metric_Value_box_edgecolor = "#000000"                # لون إطار مربع القيم
 
 # خاص بإعدادات الشكل 4
@@ -50,7 +50,7 @@ Length = 8                                              # طول إطار الش
 Width  = 8                                              # عرض إطار الشكل
 
 # خاص بالمفتاح 5
-legend_text_size = 7                                    # حجم خط نص المفتاح
+legend_text_size = 9                                    # حجم خط نص المفتاح
 legend_text_bold = None                                 # سمك خط المفتاح ولإظهار السمك غيرها إلى legend_text_bold = "bold"
 legend_color_option = True                              # لكي تأخذ المفاتيح لون الأسود غيرها إلى Metric_color_option = False
 
