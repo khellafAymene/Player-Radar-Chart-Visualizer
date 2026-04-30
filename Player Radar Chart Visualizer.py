@@ -13,7 +13,7 @@ from ANIS_HAJJAJI import *
 
 
 # ضع المسار المحلي للخط بعد تنزيله
-Path = r"D:\\NEW fONTS\\Almarai-Regular.ttf"
+Path = r"fonts\\Almarai-Regular.ttf"
 font_italic = fm.FontProperties(fname=Path)
 
 #─────0. تحديد القيم────────────────────────────────────────────────────────────────────
@@ -22,7 +22,7 @@ font_italic = fm.FontProperties(fname=Path)
 # خاص بالعنوان 1
 First_tittel="Player Radar Chart Visualizer"            # العنوان الرئيسي
 First_tittel_color = "#570101"                        # لون العنوان الرئيسي
-First_tittel_size = 12                                  # حجم العنوان الرئيسي
+First_tittel_size = 16                                  # حجم العنوان الرئيسي
 First_tittel_bold = "bold"                              # سمك العنوان الرئيسي ولإزالة السمك غيرها إلى First_tittel_bold = None
 fontstyle = font_italic
 
