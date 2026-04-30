@@ -3,9 +3,8 @@
 A customizable **polar/radar chart** tool for visualizing football (soccer) player statistics, built with Python and Matplotlib. Designed to produce clean, professional-looking player performance visuals.
 ---
 ##  📝 Note
-The provided code is best used in Power BI. You only need to remove the second and third lines, and it will run directly. Once the data file is supplied, the code will work without further adjustments.
+The provided code is best used in **Power BI**. You only need to remove this line, and it will run directly. Once the data file is supplied, the code will work without further adjustments.
 ```python
-# قراءة البيانات
 dataset = pd.read_excel("DATA.xlsx",sheet_name="PLAYER")
 ```
 
