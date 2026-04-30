@@ -1,6 +1,13 @@
 # 🕸️ Player Radar Chart Visualizer
 
 A customizable **polar/radar chart** tool for visualizing football (soccer) player statistics, built with Python and Matplotlib. Designed to produce clean, professional-looking player performance visuals.
+
+
+<div align="center">
+  <img src="Player Radar Chart Visualizer.png" />
+
+</div>
+
 ---
 ##  📝 Note
 The provided code is best used in **Power BI**. You only need to remove this line, and it will run directly. Once the data file is supplied, the code will work without further adjustments.
